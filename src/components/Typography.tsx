@@ -6,7 +6,7 @@ type NativeElementProps = DetailedHTMLProps<
 >;
 
 const H1: FC<NativeElementProps> = ({ className, ...props }) => (
-  <h1 className={`text-8xl ${className}`} {...props} />
+  <h1 className={`text-4xl ${className}`} {...props} />
 );
 
 export { H1 };

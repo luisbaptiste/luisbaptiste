@@ -4,6 +4,7 @@ module.exports = {
     description: `TODO`,
     author: `Luis Baptiste`,
     siteUrl: `https://luisbaptiste.com`,
+    lang: 'en',
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

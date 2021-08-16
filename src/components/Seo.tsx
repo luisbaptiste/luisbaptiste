@@ -2,20 +2,18 @@ import React, { FC, memo } from 'react';
 import { Helmet } from 'react-helmet';
 import { useStaticQuery, graphql } from 'gatsby';
 
-type SeoProps = {
-  description?: string;
-  lang?: string;
-  meta?: HTMLMetaElement[];
+export type SeoProps = {
   title: string;
 };
 
-const Seo: FC<SeoProps> = memo(({ description, lang, meta, title }) => {
+const Seo: FC<SeoProps> = memo(({ title }) => {
   const { site } = useStaticQuery<{
     site: {
       siteMetadata: {
         title: string;
         description: string;
         author: string;
+        lang: string;
       };
     };
   }>(
@@ -26,26 +24,26 @@ const Seo: FC<SeoProps> = memo(({ description, lang, meta, title }) => {
             title
             description
             author
+            lang
           }
         }
       }
     `,
   );
 
-  const metaDescription = description || site.siteMetadata.description;
   const defaultTitle = site.siteMetadata?.title;
 
   return (
     <Helmet
       htmlAttributes={{
-        lang,
+        lang: site.siteMetadata.lang,
       }}
       title={title}
-      titleTemplate={defaultTitle ? `%s | ${defaultTitle}` : undefined}
+      titleTemplate={defaultTitle ? `${defaultTitle} | %s` : undefined}
       meta={[
         {
           name: `description`,
-          content: metaDescription,
+          content: site.siteMetadata.description,
         },
         {
           property: `og:title`,
@@ -53,7 +51,7 @@ const Seo: FC<SeoProps> = memo(({ description, lang, meta, title }) => {
         },
         {
           property: `og:description`,
-          content: metaDescription,
+          content: site.siteMetadata.description,
         },
         {
           property: `og:type`,
@@ -73,9 +71,9 @@ const Seo: FC<SeoProps> = memo(({ description, lang, meta, title }) => {
         },
         {
           name: `twitter:description`,
-          content: metaDescription,
+          content: site.siteMetadata.description,
         },
-      ].concat(meta || [])}
+      ]}
     />
   );
 });
