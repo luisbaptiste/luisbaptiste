@@ -6,7 +6,7 @@ type SeoProps = {
   description?: string;
   lang?: string;
   meta?: HTMLMetaElement[];
-  title?: string;
+  title: string;
 };
 
 const Seo: FC<SeoProps> = memo(({ description, lang, meta, title }) => {
@@ -80,4 +80,4 @@ const Seo: FC<SeoProps> = memo(({ description, lang, meta, title }) => {
   );
 });
 
-export default Seo;
+export { Seo };

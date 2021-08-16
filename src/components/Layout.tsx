@@ -8,4 +8,4 @@ const Layout: FC<LayoutProps> = ({ children }) => {
   return <div>{children}</div>;
 };
 
-export default Layout;
+export { Layout };
