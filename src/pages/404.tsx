@@ -1,6 +1,5 @@
-import React, { FC, useEffect } from 'react';
+import { FC, useEffect } from 'react';
 
-import { Layout, Seo } from 'components';
 import { navigate } from '@reach/router';
 
 const NotFoundPage: FC = () => {
@@ -8,12 +7,7 @@ const NotFoundPage: FC = () => {
     navigate('/');
   }, []);
 
-  return (
-    <Layout>
-      <Seo title="404: Not found" />
-      <h1>404: Not Found</h1>
-    </Layout>
-  );
+  return null;
 };
 
 export default NotFoundPage;
