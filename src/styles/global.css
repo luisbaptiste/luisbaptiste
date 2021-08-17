@@ -15,3 +15,11 @@
 body {
   font-family: Stilu;
 }
+
+/* https://discourse.webflow.com/t/overflow-hidden-round-corners-not-working-on-safari/67805/5 */
+.rounded-full {
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+}

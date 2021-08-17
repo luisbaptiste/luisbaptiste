@@ -25,7 +25,7 @@ const HomePage: FC = () => {
         <StaticImage
           src="../images/luis.png"
           alt="Luis Baptiste"
-          className="rounded-full overflow-hidden"
+          className="rounded-full"
           width={140}
         />
         <H1>Luis Baptiste</H1>
