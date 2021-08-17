@@ -16,10 +16,28 @@ body {
   font-family: Stilu;
 }
 
-/* https://discourse.webflow.com/t/overflow-hidden-round-corners-not-working-on-safari/67805/5 */
-.rounded-full {
-  -webkit-backface-visibility: hidden;
-  -moz-backface-visibility: hidden;
-  -webkit-transform: translate3d(0, 0, 0);
-  -moz-transform: translate3d(0, 0, 0);
+@layer utilities {
+  .rounded-full {
+    border-radius: 9999px;
+
+    /* https://discourse.webflow.com/t/overflow-hidden-round-corners-not-working-on-safari/67805/5 */
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+  }
+
+  .underline-offset-1 {
+    text-underline-offset: 1px;
+  }
+  .underline-offset-2 {
+    text-underline-offset: 2px;
+  }
+  .underline-offset-3 {
+    text-underline-offset: 3px;
+  }
+
+  .text-shadow {
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.25);
+  }
 }

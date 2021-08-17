@@ -12,8 +12,14 @@ type CategoryLinkProps = {
 
 const CategoryLink: FC<CategoryLinkProps> = ({ id, name }) => (
   <Link to={`/categories/${id}`}>
-    <div className="h-44 border-black border-2 flex">
-      <div className="text-xl md:text-2xl self-end p-3">{name}</div>
+    <div
+      className="h-52 flex bg-center bg-cover list-category"
+      style={{
+        backgroundImage: "url('/images/bio.jpg')",
+      }}>
+      <label className="text-xl text-white text-shadow md:text-2xl self-end px-3 py-2">
+        {name}
+      </label>
     </div>
   </Link>
 );
@@ -22,13 +28,15 @@ const HomePage: FC = () => {
   return (
     <Layout title="Home">
       <header className="lg:float-left lg:w-80 lg:mr-6">
-        <StaticImage
-          src="../images/luis.png"
-          alt="Luis Baptiste"
-          className="rounded-full"
-          width={140}
-        />
-        <H1>Luis Baptiste</H1>
+        <Link to="/">
+          <StaticImage
+            src="../../static/images/luis.png"
+            alt="Luis Baptiste"
+            className="rounded-full"
+            width={140}
+          />
+          <H1>Luis Baptiste</H1>
+        </Link>
         <P>
           Hello! I am a contractor and woodworking professional with training in
           architecture. I am also a proud father and grandfather.
