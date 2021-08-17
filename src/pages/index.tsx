@@ -12,7 +12,7 @@ type CategoryLinkProps = {
 const CategoryLink: FC<CategoryLinkProps> = ({ id, name }) => (
   <Link to={`/categories/${id}`}>
     <div className="h-44 border-black border-2 flex">
-      <div className="text-2xl self-end pl-3 pb-3">{name}</div>
+      <div className="text-2xl self-end p-3">{name}</div>
     </div>
   </Link>
 );
@@ -20,7 +20,7 @@ const CategoryLink: FC<CategoryLinkProps> = ({ id, name }) => (
 const HomePage: FC = () => {
   return (
     <Layout title="Home">
-      <header className="lg:float-left lg:w-60 lg:mr-4">
+      <header className="lg:float-left lg:w-72 lg:mr-4">
         <img src="https://picsum.photos/138" className="rounded-full" />
         <H1>Luis Baptiste</H1>
         <P>
