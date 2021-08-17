@@ -1,6 +1,6 @@
 import 'styles/global.css';
 
-import { H1, Layout, P } from 'components';
+import { A, H1, Layout, P } from 'components';
 import { Link } from 'gatsby';
 import React, { FC } from 'react';
 
@@ -20,7 +20,7 @@ const CategoryLink: FC<CategoryLinkProps> = ({ id, name }) => (
 const HomePage: FC = () => {
   return (
     <Layout title="Home">
-      <header>
+      <header className="lg:float-left lg:w-60 lg:mr-4">
         <img src="https://picsum.photos/138" className="rounded-full" />
         <H1>Luis Baptiste</H1>
         <P>
@@ -29,17 +29,23 @@ const HomePage: FC = () => {
         </P>
         <P>
           Contact me at{' '}
-          <a title="Email me" href="mailto:luis.baptiste@protonmail.com">
+          <A
+            title="Email me"
+            href="mailto:luis.baptiste@protonmail.com"
+            className="whitespace-nowrap">
             luis.baptiste@protonmail
-          </a>{' '}
+          </A>{' '}
           or{' '}
-          <a title="Call me" href="tel:123-456-7890">
+          <A
+            title="Call me"
+            href="tel:123-456-7890"
+            className="whitespace-nowrap">
             123-456-7890
-          </a>
+          </A>
           .
         </P>
       </header>
-      <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+      <div className="grid grid-cols-2 gap-4">
         <CategoryLink id="sample-category" name="Home Remodeling" />
         <CategoryLink id="sample-category" name="Woodwork" />
         <CategoryLink id="sample-category" name="Floorplans" />

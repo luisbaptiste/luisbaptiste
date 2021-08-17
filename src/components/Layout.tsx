@@ -1,5 +1,4 @@
-import { H1, Seo } from 'components';
-import { Link } from 'gatsby';
+import { Seo } from 'components';
 import React, { FC, HTMLAttributeAnchorTarget, ReactNode } from 'react';
 
 export type LayoutProps = {
@@ -13,14 +12,8 @@ type NavLinkProps = {
   target?: HTMLAttributeAnchorTarget;
 };
 
-const NavLink: FC<NavLinkProps> = ({ name, to, target }) => (
-  <a href={to} className="ml-3 select-none" target={target}>
-    {name}
-  </a>
-);
-
 const Layout: FC<LayoutProps> = ({ children, title }) => (
-  <div className="mx-10 my-3">
+  <div className="mx-10 md:mx-32 my-8">
     <Seo title={title}>{children}</Seo>
     {children}
   </div>
