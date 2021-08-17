@@ -30,7 +30,7 @@ const HomePage: FC = () => {
         />
         <H1>Luis Baptiste</H1>
         <P>
-          Hello! I am a contract and woodworking professional with training in
+          Hello! I am a contractor and woodworking professional with training in
           architecture. I am also a proud father and grandfather.
         </P>
         <P>
