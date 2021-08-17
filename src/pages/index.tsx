@@ -13,7 +13,7 @@ type CategoryLinkProps = {
 const CategoryLink: FC<CategoryLinkProps> = ({ id, name }) => (
   <Link to={`/categories/${id}`}>
     <div
-      className="h-52 flex bg-center bg-cover list-category border-4 border-white shadow-lg"
+      className="h-44 md:h-52 lg:h-64 2xl:h-80 flex bg-center bg-cover list-category border-4 border-white shadow-lg"
       style={{
         backgroundImage: "url('/images/bio.jpg')",
       }}>
