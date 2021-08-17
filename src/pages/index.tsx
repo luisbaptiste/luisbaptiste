@@ -12,7 +12,7 @@ type CategoryLinkProps = {
 const CategoryLink: FC<CategoryLinkProps> = ({ id, name }) => (
   <Link to={`/categories/${id}`}>
     <div className="h-44 border-black border-2 flex">
-      <div className="text-2xl self-end p-3">{name}</div>
+      <div className="text-xl md:text-2xl self-end p-3">{name}</div>
     </div>
   </Link>
 );
