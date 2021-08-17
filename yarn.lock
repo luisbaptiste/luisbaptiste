@@ -6004,7 +6004,7 @@ gatsby-recipes@^0.22.0:
 
 gatsby-source-filesystem@^3.11.0:
   version "3.11.0"
-  resolved "https://registry.npmjs.org/gatsby-source-filesystem/-/gatsby-source-filesystem-3.11.0.tgz"
+  resolved "https://registry.yarnpkg.com/gatsby-source-filesystem/-/gatsby-source-filesystem-3.11.0.tgz#b9d67f9a685e8542d1be0f0917a6223b31a787e4"
   integrity sha512-cKQ4yhzLfw8Gs0B1FtgsLu51iqF+BUu/UewLBtu61I7Qyym797ESqeAvBd0bdHYckXmWl7c3qhBd1531iOXp2w==
   dependencies:
     "@babel/runtime" "^7.14.6"
