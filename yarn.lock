@@ -5809,7 +5809,7 @@ gatsby-plugin-gatsby-cloud@^2.11.0:
 
 gatsby-plugin-image@^1.11.0:
   version "1.11.0"
-  resolved "https://registry.npmjs.org/gatsby-plugin-image/-/gatsby-plugin-image-1.11.0.tgz"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-image/-/gatsby-plugin-image-1.11.0.tgz#c7d2ffa79c6476e1fdf305a183bc02e99f31ec12"
   integrity sha512-hlbGHpGTgHOp0QTWE9jF0IILRbzbbDPkjktCjXR43Pt24L7/Df4HqdFrJM7hB36O4d7j3vY1GSW1L5OUEPPkhw==
   dependencies:
     "@babel/code-frame" "^7.14.0"
@@ -5886,7 +5886,7 @@ gatsby-plugin-root-import@^2.0.7:
 
 gatsby-plugin-sharp@^3.11.0:
   version "3.11.0"
-  resolved "https://registry.npmjs.org/gatsby-plugin-sharp/-/gatsby-plugin-sharp-3.11.0.tgz"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-sharp/-/gatsby-plugin-sharp-3.11.0.tgz#59d7798dcc7412d1749d40eee399b9b1e787b83b"
   integrity sha512-r1c0Mgt32Mf1nhJ1XyIFBDpYbFZMTtkMgalUmkUn+gHVG+JOoFOpa1HR0Wk5/hIRpFMcEs9JInV1nfe/p9EteQ==
   dependencies:
     "@babel/runtime" "^7.14.6"
