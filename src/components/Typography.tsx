@@ -26,7 +26,10 @@ const P: FC<
 const A: FC<
   DetailedHTMLProps<AnchorHTMLAttributes<HTMLAnchorElement>, HTMLAnchorElement>
 > = ({ className, ...props }) => (
-  <a className={`underline underline-offset-2 ${className}`} {...props} />
+  <a
+    className={`underline underline-offset-1 text-gray-500 ${className}`}
+    {...props}
+  />
 );
 
 export { A, H1, H2, P };
