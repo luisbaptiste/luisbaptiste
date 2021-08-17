@@ -20,7 +20,7 @@ const CategoryLink: FC<CategoryLinkProps> = ({ id, name }) => (
 const HomePage: FC = () => {
   return (
     <Layout title="Home">
-      <header className="lg:float-left lg:w-72 lg:mr-4">
+      <header className="lg:float-left lg:w-80 lg:mr-6">
         <img src="https://picsum.photos/138" className="rounded-full" />
         <H1>Luis Baptiste</H1>
         <P>
