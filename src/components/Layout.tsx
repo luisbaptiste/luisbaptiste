@@ -10,7 +10,7 @@ const Layout: FC<LayoutProps> = memo(({ children, title }) => (
   <div className="px-4 md:px-28 pt-4 pd:pt-8 flex flex-col h-full justify-between">
     <Seo title={title}>{children}</Seo>
     <main>{children}</main>
-    <footer className="text-center text-xs my-4">
+    <footer className="text-center text-xs pt-8 pb-32 sm:pb-4">
       <FinePrint>&copy; Luis Baptiste {new Date().getFullYear()}</FinePrint>
     </footer>
   </div>
