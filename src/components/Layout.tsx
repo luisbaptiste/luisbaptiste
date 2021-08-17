@@ -7,7 +7,7 @@ export type LayoutProps = {
 };
 
 const Layout: FC<LayoutProps> = ({ children, title }) => (
-  <div className="px-4 md:px-28 pt-4 pd:mt-8 pb-20">
+  <div className="px-4 md:px-28 pt-4 pd:mt-8 pb-40">
     <Seo title={title}>{children}</Seo>
     {children}
   </div>

@@ -14,10 +14,11 @@
 
 html {
   height: 100%;
+  overflow: hidden;
+  position: relative;
 }
 
 body {
-  overscroll-behavior: none;
   background-position: fixed;
   background: #d8d5c6;
   background: -webkit-linear-gradient(
@@ -30,7 +31,12 @@ body {
   background: linear-gradient(to bottom, #eaeaea, #dbdbdb, #f2f2f2, #d8d5c6);
   background-repeat: no-repeat;
   font-family: Stilu;
+  height: 100vh;
   min-height: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  overscroll-behavior-y: none;
+  -webkit-overflow-scrolling: touch;
 }
 
 @layer utilities {
