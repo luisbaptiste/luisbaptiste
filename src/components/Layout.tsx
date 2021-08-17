@@ -1,15 +1,9 @@
 import { Seo } from 'components';
-import React, { FC, HTMLAttributeAnchorTarget, ReactNode } from 'react';
+import React, { FC, ReactNode } from 'react';
 
 export type LayoutProps = {
   children: ReactNode;
   title: string;
-};
-
-type NavLinkProps = {
-  name: string;
-  to: string;
-  target?: HTMLAttributeAnchorTarget;
 };
 
 const Layout: FC<LayoutProps> = ({ children, title }) => (
