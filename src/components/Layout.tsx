@@ -14,9 +14,9 @@ type NavLinkProps = {
 };
 
 const NavLink: FC<NavLinkProps> = ({ name, to, target }) => (
-  <Link to={to} className="pl-3 select-none" target={target}>
+  <a href={to} className="pl-3 select-none" target={target}>
     {name}
-  </Link>
+  </a>
 );
 
 const Layout: FC<LayoutProps> = ({ children, title }) => (
