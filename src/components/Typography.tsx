@@ -32,4 +32,10 @@ const A: FC<
   />
 );
 
-export { A, H1, H2, P };
+const FinePrint: FC<
+  DetailedHTMLProps<HTMLAttributes<HTMLSpanElement>, HTMLSpanElement>
+> = ({ className, ...props }) => (
+  <span className={`text-xs text-gray-500 ${className}`} {...props} />
+);
+
+export { A, FinePrint, H1, H2, P };

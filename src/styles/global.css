@@ -39,6 +39,11 @@ body {
   -webkit-overflow-scrolling: touch;
 }
 
+#___gatsby,
+#gatsby-focus-wrapper {
+  height: 100%;
+}
+
 @layer utilities {
   .rounded-full {
     border-radius: 9999px;

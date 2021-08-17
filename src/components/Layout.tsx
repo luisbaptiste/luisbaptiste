@@ -1,16 +1,19 @@
-import { Seo } from 'components';
-import React, { FC, ReactNode } from 'react';
+import { FinePrint, Seo } from 'components';
+import React, { FC, memo, ReactNode } from 'react';
 
 export type LayoutProps = {
   children: ReactNode;
   title: string;
 };
 
-const Layout: FC<LayoutProps> = ({ children, title }) => (
-  <div className="px-4 md:px-28 pt-4 pd:mt-8 pb-40">
+const Layout: FC<LayoutProps> = memo(({ children, title }) => (
+  <div className="px-4 md:px-28 pt-4 pd:pt-8 flex flex-col h-full justify-between">
     <Seo title={title}>{children}</Seo>
-    {children}
+    <main>{children}</main>
+    <footer className="text-center text-xs my-4">
+      <FinePrint>&copy; Luis Baptiste {new Date().getFullYear()}</FinePrint>
+    </footer>
   </div>
-);
+));
 
 export { Layout };
