@@ -1,3 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: 'Stilu';
+  src: url('/fonts/stilu/stilu-regular-webfont.eot');
+  src: url('/fonts/stilu/stilu-regular-webfont.eot?#iefix')
+      format('embedded-opentype'),
+    url('/fonts/stilu/stilu-regular-webfont.woff') format('woff'),
+    url('/fonts/stilu/stilu-regular-webfont.ttf') format('truetype'),
+    url('/fonts/stilu/stilu-regular-webfont.svg#webfont') format('svg');
+}
+
+body {
+  font-family: Stilu;
+}

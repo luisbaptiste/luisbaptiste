@@ -54,5 +54,12 @@ module.exports = {
     // `gatsby-plugin-offline`,
     `gatsby-plugin-postcss`,
     `gatsby-plugin-root-import`,
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'fonts',
+        path: `${__dirname}/src/fonts/stilu`,
+      },
+    },
   ],
 };
