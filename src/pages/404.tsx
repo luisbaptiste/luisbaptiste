@@ -1,6 +1,5 @@
-import { FC, useEffect } from 'react';
-
 import { navigate } from '@reach/router';
+import { FC, useEffect } from 'react';
 
 const NotFoundPage: FC = () => {
   useEffect(() => {
