@@ -27,11 +27,11 @@ const CategoryLink: FC<CategoryLinkProps> = ({ id, name }) => (
 const HomePage: FC = () => {
   return (
     <Layout title="Home">
-      <header className="flex flex-row-reverse items-center lg:flex-col lg:items-start mb-1 lg:float-left lg:w-80 lg:mr-6 overflow-y-auto">
+      <header className="flex flex-row-reverse items-center lg:flex-col lg:items-start mb-4 lg:float-left lg:w-80 lg:mr-6 overflow-y-auto">
         <StaticImage
           src="../../static/images/luis.png"
           alt="Luis Baptiste"
-          className="flex-shrink-0  ml-2 lg:ml-0 rounded-full shadow-inner"
+          className="flex-shrink-0  ml-3 lg:ml-0 rounded-full shadow-inner"
           width={140}
         />
         <div>
@@ -40,7 +40,7 @@ const HomePage: FC = () => {
             Hello! I am a contractor and woodworking professional with training
             in architecture. I am also a proud father and grandfather.
           </P>
-          <P>
+          <P className="mb-0">
             Contact me at{' '}
             <A
               title="Email me"
