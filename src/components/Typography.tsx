@@ -15,7 +15,7 @@ const H2: FC<
   DetailedHTMLProps<HTMLAttributes<HTMLHeadingElement>, HTMLHeadingElement>
 > = ({ className, ...props }) => (
   <h2
-    className={`text-md font-extrabold text-gray-500 text-center mb-6 ${className}`}
+    className={`text-md font-bold text-gray-500 mb-4 ${className}`}
     {...props}
   />
 );

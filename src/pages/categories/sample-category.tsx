@@ -3,7 +3,7 @@ import { StaticImage } from 'gatsby-plugin-image';
 import React, { FC } from 'react';
 
 const SampleProject: FC = () => (
-  <div className="max-w-3xl m-auto pb-10 mb-6 border-b-2 border-gray-300">
+  <div className="max-w-3xl m-auto pb-10 mb-6 border-b border-gray-300">
     <H3>Sample Project</H3>
     <P>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pretium leo
@@ -21,7 +21,7 @@ const SampleProject: FC = () => (
 const SampleCategory: FC = () => {
   return (
     <Layout title="Sample Category">
-      <H2>Sample Category</H2>
+      <H2 className="max-w-3xl m-auto">Sample Category</H2>
       <SampleProject />
       <SampleProject />
       <SampleProject />
