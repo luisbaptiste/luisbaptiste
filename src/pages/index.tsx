@@ -1,5 +1,3 @@
-import 'styles/global.css';
-
 import { A, H1, Layout, P } from 'components';
 import { Link } from 'gatsby';
 import { StaticImage } from 'gatsby-plugin-image';
