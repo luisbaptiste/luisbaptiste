@@ -10,6 +10,6 @@ export const onClientEntry = () => {
 
 export const onRouteUpdate = ({ location }) => {
   if (!location.host.includes('localhost')) {
-    mixpanel.track(`page_view_${location.pathname}`);
+    mixpanel.track('view_page', { pathname: location.pathname });
   }
 };
