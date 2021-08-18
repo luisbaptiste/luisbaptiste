@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 // https://www.gatsbyjs.com/docs/browser-apis/
 
 import mixpanel from 'mixpanel-browser';
@@ -8,6 +10,6 @@ export const onClientEntry = () => {
 
 export const onRouteUpdate = ({ location }) => {
   if (!location.host.includes('localhost')) {
-    mixpanel.track('Page View', { path: location.pathname });
+    mixpanel.track(`page_view_${location.pathname}`);
   }
 };

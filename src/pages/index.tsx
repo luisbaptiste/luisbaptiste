@@ -3,6 +3,7 @@ import 'styles/global.css';
 import { A, H1, Layout, P } from 'components';
 import { Link } from 'gatsby';
 import { StaticImage } from 'gatsby-plugin-image';
+import mixpanel from 'mixpanel-browser';
 import React, { FC } from 'react';
 
 type CategoryLinkProps = {
@@ -45,14 +46,20 @@ const HomePage: FC = () => {
             <A
               title="Email me"
               href="mailto:luis.baptiste@protonmail.com"
-              className="whitespace-nowrap">
+              className="whitespace-nowrap"
+              onClick={() => {
+                mixpanel.track('press_email_me');
+              }}>
               luis.baptiste@protonmail
             </A>{' '}
             or{' '}
             <A
               title="Call me"
               href="tel:123-456-7890"
-              className="whitespace-nowrap">
+              className="whitespace-nowrap"
+              onClick={() => {
+                mixpanel.track('press_call_me');
+              }}>
               123-456-7890
             </A>
             .
