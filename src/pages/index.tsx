@@ -27,37 +27,37 @@ const CategoryLink: FC<CategoryLinkProps> = ({ id, name }) => (
 const HomePage: FC = () => {
   return (
     <Layout title="Home">
-      <header className="lg:float-left lg:w-80 lg:mr-6 overflow-y-auto">
-        <Link to="/">
-          <StaticImage
-            src="../../static/images/luis.png"
-            alt="Luis Baptiste"
-            className="rounded-full shadow-inner float-right my-3 ml-2 lg:float-none lg:mb-0 lg:ml-0"
-            width={140}
-          />
+      <header className="flex flex-row-reverse items-center lg:flex-col lg:items-start mb-1 lg:float-left lg:w-80 lg:mr-6 overflow-y-auto">
+        <StaticImage
+          src="../../static/images/luis.png"
+          alt="Luis Baptiste"
+          className="flex-shrink-0  ml-2 lg:ml-0 rounded-full shadow-inner"
+          width={140}
+        />
+        <div>
           <H1>Luis Baptiste</H1>
-        </Link>
-        <P>
-          Hello! I am a contractor and woodworking professional with training in
-          architecture. I am also a proud father and grandfather.
-        </P>
-        <P>
-          Contact me at{' '}
-          <A
-            title="Email me"
-            href="mailto:luis.baptiste@protonmail.com"
-            className="whitespace-nowrap">
-            luis.baptiste@protonmail
-          </A>{' '}
-          or{' '}
-          <A
-            title="Call me"
-            href="tel:123-456-7890"
-            className="whitespace-nowrap">
-            123-456-7890
-          </A>
-          .
-        </P>
+          <P>
+            Hello! I am a contractor and woodworking professional with training
+            in architecture. I am also a proud father and grandfather.
+          </P>
+          <P>
+            Contact me at{' '}
+            <A
+              title="Email me"
+              href="mailto:luis.baptiste@protonmail.com"
+              className="whitespace-nowrap">
+              luis.baptiste@protonmail
+            </A>{' '}
+            or{' '}
+            <A
+              title="Call me"
+              href="tel:123-456-7890"
+              className="whitespace-nowrap">
+              123-456-7890
+            </A>
+            .
+          </P>
+        </div>
       </header>
       <div className="grid grid-cols-2 gap-4">
         <CategoryLink id="sample-category" name="Home Remodeling" />
