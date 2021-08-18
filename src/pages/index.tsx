@@ -27,12 +27,12 @@ const CategoryLink: FC<CategoryLinkProps> = ({ id, name }) => (
 const HomePage: FC = () => {
   return (
     <Layout title="Home">
-      <header className="lg:float-left lg:w-80 lg:mr-6">
+      <header className="lg:float-left lg:w-80 lg:mr-6 overflow-y-auto">
         <Link to="/">
           <StaticImage
             src="../../static/images/luis.png"
             alt="Luis Baptiste"
-            className="rounded-full shadow-inner float-right ml-3 lg:float-none lg:ml-0"
+            className="rounded-full shadow-inner float-right my-3 ml-2 lg:float-none lg:mb-0 lg:ml-0"
             width={140}
           />
           <H1>Luis Baptiste</H1>
