@@ -14,13 +14,22 @@ const H1: FC<
 const H2: FC<
   DetailedHTMLProps<HTMLAttributes<HTMLHeadingElement>, HTMLHeadingElement>
 > = ({ className, ...props }) => (
-  <h2 className={`text-xl text-center mb-2 ${className}`} {...props} />
+  <h2
+    className={`text-md font-extrabold text-gray-500 text-center mb-6 ${className}`}
+    {...props}
+  />
+);
+
+const H3: FC<
+  DetailedHTMLProps<HTMLAttributes<HTMLHeadingElement>, HTMLHeadingElement>
+> = ({ className, ...props }) => (
+  <h3 className={`text-xl ${className}`} {...props} />
 );
 
 const P: FC<
   DetailedHTMLProps<HTMLAttributes<HTMLParagraphElement>, HTMLParagraphElement>
 > = ({ className, ...props }) => (
-  <p className={`mt-4 mb-6 text-sm ${className}`} {...props} />
+  <p className={`my-4 text-sm ${className}`} {...props} />
 );
 
 const A: FC<
@@ -38,4 +47,4 @@ const FinePrint: FC<
   <span className={`text-xs text-gray-500 ${className}`} {...props} />
 );
 
-export { A, FinePrint, H1, H2, P };
+export { A, FinePrint, H1, H2, H3, P };

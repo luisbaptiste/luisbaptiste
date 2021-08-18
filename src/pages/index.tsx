@@ -15,7 +15,7 @@ const CategoryLink: FC<CategoryLinkProps> = ({ id, name }) => (
     <div
       className="h-44 sm:h-52 lg:h-64 2xl:h-80 flex bg-center bg-cover list-category border-4 border-white shadow-md"
       style={{
-        backgroundImage: "url('/images/bio.jpg')",
+        backgroundImage: "url('/images/category-sample.jpg')",
       }}>
       <label className="text-xl text-white text-shadow md:text-2xl self-end px-3 py-2 select-none">
         {name}
