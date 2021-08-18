@@ -1,9 +1,4 @@
-/* eslint-disable @typescript-eslint/explicit-module-boundary-types */
-/**
- * Implement Gatsby's Browser APIs in this file.
- *
- * See: https://www.gatsbyjs.com/docs/browser-apis/
- */
+// https://www.gatsbyjs.com/docs/browser-apis/
 
 import mixpanel from 'mixpanel-browser';
 
