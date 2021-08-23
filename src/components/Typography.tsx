@@ -23,7 +23,10 @@ const H2: FC<
 const H3: FC<
   DetailedHTMLProps<HTMLAttributes<HTMLHeadingElement>, HTMLHeadingElement>
 > = ({ className, ...props }) => (
-  <h3 className={`text-xl ${className}`} {...props} />
+  <h3
+    className={`text-xl bg-black text-white inline-block p-2 font-bold ${className}`}
+    {...props}
+  />
 );
 
 const P: FC<
