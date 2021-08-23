@@ -17,7 +17,7 @@ const CategoryLink: FC<CategoryLinkProps> = ({ id, name, imagePath }) => (
       style={{
         backgroundImage: `url('${imagePath}')`,
       }}>
-      <label className="text-lg bg-black font-bold text-white text-shadow md:text-2xl self-end px-3 py-2 select-none">
+      <label className="text-lg bg-black font-bold text-white text-shadow md:text-xl self-end px-2 py-1 select-none">
         {name}
       </label>
     </div>
