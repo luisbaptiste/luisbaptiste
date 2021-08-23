@@ -2,15 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
-  font-family: 'Stilu';
-  src: url('/fonts/stilu/stilu-regular-webfont.eot');
-  src: url('/fonts/stilu/stilu-regular-webfont.eot?#iefix')
-      format('embedded-opentype'),
-    url('/fonts/stilu/stilu-regular-webfont.woff') format('woff'),
-    url('/fonts/stilu/stilu-regular-webfont.ttf') format('truetype'),
-    url('/fonts/stilu/stilu-regular-webfont.svg#webfont') format('svg');
-}
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@400;700&display=swap');
 
 html {
   height: 100%;
@@ -18,7 +10,7 @@ html {
   position: relative;
 }
 
-html,
+/* html,
 body {
   background-position: fixed;
   background: #d8d5c6;
@@ -31,10 +23,11 @@ body {
   );
   background: linear-gradient(to bottom, #eaeaea, #dbdbdb, #f2f2f2, #d8d5c6);
   background-repeat: no-repeat;
-}
+} */
 
 body {
-  font-family: Stilu;
+  font-family: Urbanist;
+  font-weight: 400;
   height: 100vh;
   min-height: 100%;
   overflow-y: scroll;

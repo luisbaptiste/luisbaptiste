@@ -1,4 +1,4 @@
-import { A, H1, Layout, P } from 'components';
+import { A, H1, H2, Layout, P } from 'components';
 import { Link } from 'gatsby';
 import { StaticImage } from 'gatsby-plugin-image';
 import mixpanel from 'mixpanel-browser';
@@ -7,16 +7,17 @@ import React, { FC } from 'react';
 type CategoryLinkProps = {
   id: string;
   name: string;
+  imagePath: string;
 };
 
-const CategoryLink: FC<CategoryLinkProps> = ({ id, name }) => (
+const CategoryLink: FC<CategoryLinkProps> = ({ id, name, imagePath }) => (
   <Link to={`/categories/${id}`}>
     <div
-      className="h-44 sm:h-52 lg:h-58 xl:h-72 2xl:h-96 flex bg-center bg-cover list-category border-4 border-white shadow-md"
+      className="h-44 sm:h-52 lg:h-58 xl:h-72 2xl:h-96 flex bg-center bg-cover cursor-pointer"
       style={{
-        backgroundImage: "url('/images/category-sample.jpg')",
+        backgroundImage: `url('${imagePath}')`,
       }}>
-      <label className="text-xl text-white text-shadow md:text-2xl self-end px-3 py-2 select-none">
+      <label className="text-lg bg-black font-bold text-white text-shadow md:text-2xl self-end px-3 py-2 select-none">
         {name}
       </label>
     </div>
@@ -36,10 +37,10 @@ const HomePage: FC = () => {
         <div>
           <H1>Luis Baptiste</H1>
           <P>
-            Hello! I am a contractor and woodworking professional with training
-            in architecture. I am also a proud father and grandfather.
+            Hello! I am a contractor and woodworking professional with formal
+            training in architecture. I am also a proud father and grandfather.
           </P>
-          <P className="mb-0">
+          <P className="mb-4">
             Contact me at{' '}
             <A
               title="Email me"
@@ -65,10 +66,26 @@ const HomePage: FC = () => {
         </div>
       </header>
       <div className="grid grid-cols-2 gap-4">
-        <CategoryLink id="sample-category" name="Home Remodeling" />
-        <CategoryLink id="sample-category" name="Woodwork" />
-        <CategoryLink id="sample-category" name="Floorplans" />
-        <CategoryLink id="sample-category" name="Bio" />
+        <CategoryLink
+          id="sample-category"
+          name="Home Remodeling"
+          imagePath="/images/home-remodeling.jpg"
+        />
+        <CategoryLink
+          id="sample-category"
+          name="Woodwork"
+          imagePath="/images/woodwork.png"
+        />
+        <CategoryLink
+          id="sample-category"
+          name="Floorplans"
+          imagePath="/images/floorplans.jpg"
+        />
+        <CategoryLink
+          id="sample-category"
+          name="Bio"
+          imagePath="/images/category-sample.jpg"
+        />
       </div>
     </Layout>
   );

@@ -11,9 +11,9 @@ const SampleProject: FC = () => (
       risus. Etiam tristique quis lorem et ultricies.
     </P>
     <StaticImage
-      src="../../../static/images/project-sample.jpg"
+      src="../../../static/images/project-sample.png"
       alt="Sample Project"
-      className="border-4 border-white shadow-md m-auto"
+      className="m-auto"
     />
   </div>
 );

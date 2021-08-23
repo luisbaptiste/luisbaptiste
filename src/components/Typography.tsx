@@ -8,7 +8,7 @@ import React, {
 const H1: FC<
   DetailedHTMLProps<HTMLAttributes<HTMLHeadingElement>, HTMLHeadingElement>
 > = ({ className, ...props }) => (
-  <h1 className={`text-2xl mt-2 mb-5 ${className}`} {...props} />
+  <h1 className={`text-2xl mt-2 mb-5 font-bold ${className}`} {...props} />
 );
 
 const H2: FC<
